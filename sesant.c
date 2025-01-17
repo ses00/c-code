@@ -1,19 +1,34 @@
+#include<stdio.h>
+int main(int argc, char const *argv[])
+{
+    int a;
 
-#include <stdio.h>
+printf("Enter your number = ");
 
-void checkNumber(int num) {
-    if (num > 0) {
-        printf("%d is a positive number.\n", num);
-    } else if (num < 0) {
-        printf("%d is a negative number.\n", num);
-    } else {
-        printf("The number is zero.\n");
-    }
+scanf("%d",&a);
+
+if(a==0){
+
+
+printf("The entered number is zero");
+
 }
 
 
-int main() {
-    int number = -5;
-    checkNumber(number);
-    return 0;
+else if (a>=1){
+
+printf("The entered number is positive");
+
 }
+else{
+
+printf("The entered number is Negative");
+}
+
+   return 0;
+
+}
+
+
+
+
